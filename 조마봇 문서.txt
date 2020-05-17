@@ -1,0 +1,23 @@
+import discord
+
+client = discord.client()
+
+
+@client .event
+async def on_ready():
+print(client.user.id)
+print("ready")
+game = discord.Game("Cortana Bot / 코타나봇")
+await client.change_presence(status=discord.Status.online activity=Game)
+
+
+
+@client.event
+async def on_message(message):
+if message.content.startswith("하이 코타나")
+await message.channel.send("무엇을 도와드릴까요?")
+
+
+
+
+client.run.("NTcyMjY3NTczNzY5NDAONDE2.XMZz3A.pZtAmKtMUcvb0ed_sf036ar6z6Y")
